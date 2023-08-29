@@ -35,8 +35,121 @@
     border:0;
 }
 
+.menu{
+    margin: 10px;
+
+}
+
+.menu a{
+    padding: 10px;
+    margin-left: 20px;
+}
+.card{
+    border: 2px solid black;
+    background-color: aqua;
+    text-align: center;
+    padding: 40px;
+    width: 200px;
+    margin: auto;
+}
+.card:hover{
+    background-color: blue;
+    
+}
+#botao{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 5px;
+    margin-top: 20px;
+}
+#botao:hover{
+    color: hsl(80, 100%, 99%);
+    font-size: xx-large;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    text-shadow: 0 0 10px hsl(80, 100%, 99%),
+    0 0 50px hsl(80, 100%, 99%),
+    0 0 50px hsl(80, 100%, 99%),
+    0 0 100px hsl(80, 100%, 99%);
+    -webkit-box-reflect: below 0.0px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    opacity: 3;
+    height:auto; width:auto;
+    border:0;
+}
+.cell{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /*Permitem que as células quebrem para próxima linha*/
+    justify-content: center;
+}
+
+.cell img{
+    background-color: aqua;
+    margin: 20px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; /*Mantém a largura dentro do espaço da célula*/
+}
+/*Adiciona regras query para ajustar o layout em diferentes tamanhos*/
+@media (min-widht: 768px) {
+    .cell{
+        justify-content: space-around; /*Espaçamento entre as células em telas maiores*/
+    }
+    
+}
+
 .meio{
     width: auto;
     height: auto;
     background: blue;
+}
+.info{
+    color: antiquewhite;
+    font-size: 20px;
+    background-color: blue;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+    background-image: url(/img/fundo.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.rodape{
+    background-image: url(/Imagens/fundo.jpg);
+    padding: 60px;
+    margin-top: 20px;
+}
+
+.rodape i{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.rodape i:hover{
+    color: hsl(80, 100%, 99%);
+    font-size: xx-large;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    text-shadow: 0 0 10px hsl(80, 100%, 99%),
+    0 0 50px hsl(80, 100%, 99%),
+    0 0 50px hsl(80, 100%, 99%),
+    0 0 100px hsl(80, 100%, 99%);
+    -webkit-box-reflect: below 0.0px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    opacity: 3;
+    height:auto; width:auto;
+    border:0;
+    
+}
+body{
+    background-color: blue;
 }
