@@ -1,7 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px;
     background-image: url(/Imagens/fundo.jpg);
+}
+
+.container a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.container a:hover{
+    color: hsl(80, 100%, 99%);
+    font-size: xx-large;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    text-shadow: 0 0 10px hsl(80, 100%, 99%),
+    0 0 50px hsl(80, 100%, 99%),
+    0 0 50px hsl(80, 100%, 99%),
+    0 0 100px hsl(80, 100%, 99%);
+    -webkit-box-reflect: below 0.0px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    opacity: 3;
+    height:auto; width:auto;
+    border:0;
 }
