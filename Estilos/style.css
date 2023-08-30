@@ -56,10 +56,11 @@
     background-color: blue;
     
 }
+
 #botao{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     border-radius: 10px;
-    background-color: blue;
+    /*background-color: ;*/
     padding: 5px;
     margin-top: 20px;
 }
